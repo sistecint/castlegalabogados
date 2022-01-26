@@ -122,6 +122,11 @@
 											<div class="col-12">
 												<ul class="actions">
 													<li><input type="submit" class="primary" value="Enviar" /></li>
+													<script>
+														function onSubmit(token) {
+															document.getElementById("demo-form").submit();
+														}
+													</script>
 													<li><input type="reset" value="Borrar formulario" /></li>
 												</ul>
 											</div>
@@ -482,6 +487,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://www.google.com/recaptcha/api.js"></script>
 
 	</body>
 </html>
