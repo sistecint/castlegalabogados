@@ -29,13 +29,13 @@
 						<li><a href="#four">Contáctanos</a></li>
 					</ul>
 				</nav>
-			<footer>
+		<!--	<footer>
 					<ul class="icons">
 						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 					</ul>
-				</footer>
+				</footer> -->
 			</section>
 
 		<!-- Wrapper -->
@@ -108,34 +108,20 @@
 									<h3> Información de Contacto</h3>
 									<p> <b>CASTLEGAL</b> crecemos de la mano de nuestros clientes con el compromiso de ofrecerles asesoría legal, eficaz y
 										competitiva.
-										<li><a id="link" href="https://api.whatsapp.com/send?phone=50769802765&text=Hola!%20necesito%20asesoría%20y%20soporte%20legal!" target="blank"><i class="fab fa-whatsapp" aria-hidden="true"> As clic aquí para contactarnos a nuestro WhatsAapp</i></a></li>
+										<li><a id="link" href="https://api.whatsapp.com/send?phone=50769802765&text=Hola!%20necesito%20asesoría%20y%20soporte%20legal!" target="blank"><i class="fab fa-whatsapp" aria-hidden="true"> Si haces clic en este enlace, te pondras en contacto con nosotros por whatsApp</i></a></li>
 										<li class="icon solid fa-envelope"></i> dcastillero@castlegalabogados.com</li>
 										<li class="icon solid fa-phone"></i> 5076980-2765 / 5073862-421</li></p>
 										<h4> Completa el siguiente formulario y te contactaremos.</h4>
-						<form method="post" action="send.php">
+						<form method="post" action="send.php" id="form">
 							<div class="row gtr-uniform">
-								<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Nombre Completo" /></div>
-								<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Correo electrónico" />
+								<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Nombre Completo"></div>
+								<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Correo electrónico"/>
 								</div>
-								<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Asunto" /></div>
 								<div class="col-12"><textarea name="message" id="message" placeholder="Mensaje" rows="6"></textarea></div>
 								<div class="col-12">
 									<ul class="actions">
-										<li><input type="submit" class="primary" value="Enviar" onclick="Confirmar();"></li>
-										<script language="JavaScript">
-											function Confirmar() {
-												var retVal = confirm("sus información será enviada, ¿Estás de acuerdo?");
-												if (retVal == true) {
-													alert("Mensaje enviado, pronto te contactaremos");
-													return true;
-												} else {
-													alert("Actualiza la información");
-													return false;
-												}
-											}
-
-										</script>
-										<li><input type="reset" value="Borrar formulario" /></li>
+										<li><input type="submit" class="primary"  value="Enviar"></li>
+										<li><input type="reset" value="Borrar formulario"></li>
 									</ul>
 								</div>
 							</div>
@@ -164,6 +150,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/validate_forms.js"></script>
 			<script src="https://www.google.com/recaptcha/api.js"></script>
 
 	</body>
