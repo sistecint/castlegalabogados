@@ -15,9 +15,8 @@ $message .= "Fue enviado... " . date('d/m/Y', time());
 
 $para = "javier@sistecint.com";
 $asunto = 'Contacto desde web';
-
-
 mail($para, $asunto, utf8_decode($message), $header);
+include 'http://castlegalabogados.com';
 
 
 ?>
